@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+        "discord-fivem-api": "^1.0.6",
+        "discord.js": "^13.1.0",
+        "djs": "^0.0.2",
+        "fivem": "^2.1.8",
+        "gcommands": "^6.2.6",
+        "mysql": "^2.18.1",
+        "node-fetch": "^2.6.1",
+        "node.js": "0.0.1-security",
+        "sapphire": "0.0.3"
+    },
+    "name": "whitelist-system",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "node main.js": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
