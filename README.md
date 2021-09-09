@@ -29,3 +29,9 @@ https://nodejs.org/en/ (Make sure this is installed)
 Step One Click a folder dir Run **CMD**.
 Step Two Run **Npm Install --save**
 Step Three Run **Node .** (Make sure you edit the conifg.js)
+```
+#### Note 
+```
+The ticket system is currently not setup in the config you can edit the ids at the top of the clickbuttonevent.js file tho!
+I was two lazy to do it because I was using the bot for my guild but you can edit it easy!
+```
