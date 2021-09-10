@@ -25,7 +25,7 @@ const client = new GCommandsClient({
     commands: {
         slash: "false", //true = slash only, false = only normal, both = slash and normal
         context: "false", // https://gcommands.js.org/docs/#/docs/main/dev/typedef/GCommandsOptionsCommandsContext
-        prefix: "$", // for normal commands
+        prefix: config.token, // for normal commands
     },
     defaultCooldown: "5s",
     //    database: "url",
