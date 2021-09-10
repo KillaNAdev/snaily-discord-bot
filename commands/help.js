@@ -18,7 +18,7 @@ module.exports = class extends Command {
             .setAuthor(`${message.author.tag}`, `${message.author.displayAvatarURL({dynamic: true })}`)
             .setTitle('Megaton-Development')
             .setDescription(`**Bot: 🟢**\n`)
-            .addFields({ name: '**Commands**', value: '\n\n Check Below for commands.', inline: true }, { name: '$clear', value: 'Clears an channel.', inline: false }, { name: '$ban', value: 'Bans an member.', inline: false }, { name: '$kick', value: 'Kicks an member.', inline: false }, { name: '$whitelist', value: 'Magic.', inline: false }, )
+            .addFields({ name: '**Commands**', value: '\n\n Check Below for commands.', inline: true }, { name: '$clear', value: 'Clears an channel.', inline: false }, { name: '$ban', value: 'Bans an member.', inline: false }, { name: '$whitelist', value: 'Magic.', inline: false }, )
 
         respond(embed);
     }
