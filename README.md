@@ -19,7 +19,7 @@
 
 <br/>
 
-![](https://komarev.com/ghpvc/?username=MegatonDev&label=Views&color=lightgrey&style=flat)
+
 
 
 ### Install
