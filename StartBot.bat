@@ -1,6 +1,6 @@
 @echo off
-echo .......... Going Online
+echo Starting..
 :main
 node main.js
-echo Bot crashed. Turning On.
+echo Restarting Bot..
 goto main
