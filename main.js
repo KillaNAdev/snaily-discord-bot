@@ -1,4 +1,4 @@
-﻿const { Intents } = require("discord.js");
+const { Intents } = require("discord.js");
 const { GCommandsClient } = require("gcommands");
 const config = require('./config.js')
 const mysql = require('mysql');
@@ -17,7 +17,6 @@ con.connect(function(err) {
 */
 const client = new GCommandsClient({
     cmdDir: "commands/",
-    eventDir: "events/",
     caseSensitiveCommands: true, // true or false | whether to match the commands' caps
     caseSensitivePrefixes: true, // true or false | whether to match the prefix in message commands
     unkownCommandMessage: false, // true or false | send unkownCommand Message
