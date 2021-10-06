@@ -29,6 +29,21 @@ module.exports = class extends Command {
             reason = "N/A";
         }
 
+        if (warns > 5) {
+            wUser.ban({
+                reason: "This user has received over 5 warnings in this guild and has been kicked therefore.",
+            }).then(() => {
+                const BannedPersonEmbed = new MessageEmbed()
+                    .setColor('#00ffff')
+                    .setTitle('Admin Bot', 'https://alv.gg/img/Alv.Gif', 'https://alv.gg')
+                    .setDescription(`${wUser} has been banned from this guild for more than 5 warnings (Reason: Rule Violations)`)
+                    .setFooter("© Copyright 2021")
+                    .setAuthor(`${message.author.tag}`, `${message.author.displayAvatarURL({dynamic: true })}`)
+                    .setTimestamp()
+                message.channel.send(BannedPersonEmbed)
+            })
+        }
+
         warns[wUser.id].warns++;
 
         fs.writeFile("warnings.json", JSON.stringify(warns, null, 4), (err) => {
